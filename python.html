@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="python.css">
     <title>Python-Documentaion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +20,7 @@
             <li><a href="#comments">Comments</a></li>
             <li><a href="#variables">Variables</a></li>
             <li><a href="#data-types">Data Types</a></li>
-            
+
         </ul>
     </nav>
 
@@ -29,8 +32,8 @@
             <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
 
             <li>web development (server-side). </li>
-            <li>software development, </li>     
-            <li>mathematics, </li>   
+            <li>software development, </li>
+            <li>mathematics, </li>
             <li>system scripting.</li>
 
             <p>What can Python do?</p>
@@ -39,28 +42,37 @@
             <li>Python can connect to database systems. It can also read and modify files.</li>
             <li>Python can be used to handle big data and perform complex mathematics.</li>
             <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
-        </section >
+        </section>
 
         <section id="Syntax" class="main-section">
             <header>Syntax</header>
             <p>Python Syntax compared to other programming languages</p>
-            <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
-            <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
-            <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+            <li>Python was designed for readability, and has some similarities to the English language with influence
+                from mathematics.</li>
+            <li>Python uses new lines to complete a command, as opposed to other programming languages which often use
+                semicolons or parentheses.</li>
+            <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions
+                and classes. Other programming languages often use curly-brackets for this purpose.</li>
 
-            <h2>Example</h2>
-            <p>print("Hello, World!")</p>
-            <p>This is going to print Hello,World!</p>
+            <div class="codes">
+                <h2>Example</h2>
+                <p>print("Hello, World!")</p>
+                <p>This is going to print Hello,World!</p>
+            </div>
 
             <h2>Python Indentation</h2>
             <p>Indentation refers to the spaces at the beginning of a code line.</p>
-            <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+            <p>Where in other programming languages the indentation in code is for readability only, the indentation in
+                Python is very important.</p>
             <p>Python uses indentation to indicate a block of code.</p>
 
             <h2>Example</h2>
-            <p>if 5 > 2:
-               <br><span>print("Five is greater than two!")</span></p>
-           
+            <div class="codes">
+                <p>if 5 > 2:
+                    <br><span class="move">print("Five is greater than two!")</span>
+                </p>
+            </div>
+
 
             <p>Python will give you an error if you skip the indentation:</p>
 
@@ -75,9 +87,11 @@
             <h2>Creating a Comment</h2>
             <p>comments starts with a # , and Python will ignore them:</p>
             <h2>Example</h2>
-            <p>#This is a comment</p>
-            <p>print("Hello, World!")</p>
-           
+            <div class="codes">
+                <p>#This is a comment</p>
+                <p>print("Hello, World!")</p>
+            </div>
+
         </section>
 
         <section id="variables" class="main-section">
@@ -90,10 +104,12 @@
             <p>A variable is created the moment you first assign a value to it.</p>
 
             <h2>Example</h2>
-            <li>x = 5</li>
-            <li>y = "John"</li> 
-            <li>print(x)</li>
-            <li>print(y)</li>
+            <div class="codes">
+                <li>x = 5</li>
+                <li>y = "John"</li>
+                <li>print(x)</li>
+                <li>print(y)</li>
+            </div>
         </section>
 
         <section id="data-types" class="main-section">
@@ -102,22 +118,30 @@
             <p>In programming, data type is an important concept.
 
                 Variables can store data of different types, and different types can do different things.
-                
+
                 Python has the following data types built-in by default, in these categories:</p>
 
-                <li>Text Type: str</li>
-                <li>Numeric Types: int, float, complex</li>
-                <li>Sequence Types: list, tuple, range</li>
-                <li>Boolean Type: bool</li>
-                
-                <h2>Getting the Data Type</h2>
-                <p>You can get the data type of any object by using the type() function:</p>
+            <li>Text Type: <span class="type"> str</span></li>
+            <li>Numeric Types:  <span class="type"> int, float, complex</span></li>
+            <li>Sequence Types: <span class="type">list, tuple, range</span> </li>
+            <li>Boolean Type:  <span class="type">bool</span> </li>
+
+            <h2>Getting the Data Type</h2>
+            <p>You can get the data type of any object by using the type() function:</p>
+            <h2>Example</h2>
+            <p>Print the data type of the variable x:</p>
+            <div class="codes">
+
+                <p>x = 5 <br>
+                    print(type(x))</p>
+            </div>
         </section>
     </main>
 
     <footer>
         <h2>Reference</h2>
-        <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/python/default.asp"> w3schools</a></li>
+        <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/python/default.asp">
+                w3schools</a></li>
     </footer>
 
 </body>
