@@ -18,9 +18,9 @@ section{
     background-color: rgb(210, 208, 208);
     width: 400px;
     border-bottom: 1px solid;
-    height: 50%;
     position: fixed; 
-    overflow-x: auto;
+    overflow-x: scroll;
+    resize: vertical;
 
 }
 .navbar li{

@@ -24,6 +24,11 @@
             <li><a href="#If ... Else">If ... Else</a></li>
             <li><a href="#While Loops">While Loops</a></li>
             <li><a href="#For Loops">For Loops</a></li>
+            <li><a href="#Functions">Functions</a></li>
+            <li><a href="#Arrays">Arrays</a></li>
+            <li><a href="#Classes and Objects">Classes and Objects</a></li>
+            <li><a href="#Inheritance">Inheritance</a></li>
+           
 
         </ul>
     </nav>
@@ -214,6 +219,126 @@
                      <span class="move">print(x)</p></span> 
             </div>
             <p>The for loop does not require an indexing variable to set beforehand.</p>
+            <h2>Looping Through a String</h2>
+            <p>Even strings are iterable objects, they contain a sequence of characters:</p>
+            <h2>Example</h2>
+            <p>Loop through the letters in the word "banana":</p>
+            <div class="codes">
+                <p>for x in "banana": <br>
+                 <span class="move">print(x)</span> </p>  
+
+            </div>
+        </section>
+
+        <section id="Functions" class="main-section">
+            <header> Python Functions</header>
+            <p>A function is a block of code which only runs when it is called. <br>
+
+                You can pass data, known as parameters, into a function. <br>
+                
+                A function can return data as a result.</p>
+                <h2>Creating a Function</h2>
+                <p>In Python a function is defined using the def keyword:</p>
+                <h2>Example</h2>
+                <div class="codes">
+                    <p>def my_function(): <br>
+                      <span class="move"> print("Hello from a function")</span> </p>
+                </div>
+                <h2>Calling a Function</h2>
+                <p>To call a function, use the function name followed by parenthesis:</p>
+                <h2>Example</h2>
+                <div class="codes">
+                    <p>def my_function(): <br>
+                        <span class="move">print("Hello from a function")</span> <br>
+                      
+                      my_function()</p>
+                </div>
+        </section>
+
+        <section id="Arrays" class="main-section">
+            <header> Python Arrays</header>
+            <p class="yellow"><strong>Note:</strong>Python does not have built-in support for Arrays, but Python Lists can be used instead.</p>
+
+            <h2>Arrays</h2>
+            <p class="yellow"> <strong>Note: </strong>This page shows you how to use LISTS as ARRAYS, however, to work with arrays in Python you will have to import a library, like the NumPy library.</p>
+            <p>Arrays are used to store multiple values in one single variable:</p>
+            <h2>example</h2>
+            <div class="codes">
+                <p>Create an array containing car names: <br>
+                    cars = ["Ford", "Volvo", "BMW"]</p>
+            </div>
+        </section>
+
+
+        <section id="Classes and Objects" class="main-section">
+            <header>Python Classes and Objects</header>
+            <p>Python is an object oriented programming language. <br>
+
+                Almost everything in Python is an object, with its properties and methods. <br>
+                
+                A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+
+                <h2>Create a Class</h2>
+                <p>To create a class, use the keyword class:</p>
+                <h2>Example</h2>
+                <div class="codes">
+                    <p>Create a class named MyClass, with a property named x: <br>
+                        class MyClass: <br>
+                        x = 5</p>
+                </div>
+
+                <h2>Create Object</h2>
+                <p>Now we can use the class named MyClass to create objects:</p>
+                
+                <h2>Example</h2>
+                <div class="codes">
+                    <p>Create an object named p1, and print the value of x: <br>
+                        p1 = MyClass() <br>
+                        print(p1.x)</p>
+                </div>
+        </section>
+
+
+        <section id="Inheritance" class="main-section">
+            <header>Python Inheritance</header>
+            <p>Inheritance allows us to define a class that inherits all the methods and properties from another class. <br>
+
+                <strong>parent class</strong> is the class being inherited from, also called base class. <br>
+                
+                <strong>Child class</strong> is the class that inherits from another class, also called derived class.</p>
+
+                <h2>Create a Parent Class</h2>
+                <p>Any class can be a parent class, so the syntax is the same as creating any other class:</p>
+
+                 <h2>Example</h2>
+                 <p>Create a class named Person, with firstname and lastname properties, and a printname method:</p>
+                 <div class="codes">
+                    <p>class Person: <br>
+                        def __init__(self, fname, lname): <br>
+                         <span class="move"> self.firstname = fname <br></span> 
+                          <span class="move">self.lastname = lname <br></span>
+                      <br>
+                        def printname(self): <br>
+                        <span class="move"> print(self.firstname, self.lastname) <br></span>
+                      
+                      #Use the Person class to create an object, and then execute the printname method: <br>
+                      
+                      x = Person("John", "Doe") <br>
+                      x.printname()</p>
+                 </div>
+
+                 <h2>Create a Child Class</h2>
+                 <p>To create a class that inherits the functionality from another class, send the parent class as a parameter when creating the child class:</p>
+                  <h2>Example</h2>
+                  <div class="codes">
+                    <p>Create a class named Student, which will inherit the properties and methods from the Person class: <br>
+                        class Student(Person): <br>
+                       <span class="move"> pass</span> </p>
+                  </div>
+
+                  <p class="yellow"><strong>Note:</strong>Use the pass keyword when you do not want to add any other properties or methods to the class.</p>
+
+                  <p>Now the Student class has the same properties and methods as the Person class.</p>
         </section>
     </main>
 
