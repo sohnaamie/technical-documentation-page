@@ -20,6 +20,10 @@
             <li><a href="#comments">Comments</a></li>
             <li><a href="#variables">Variables</a></li>
             <li><a href="#data-types">Data Types</a></li>
+            <li><a href="#Operators">Operators</a></li>
+            <li><a href="#If ... Else">If ... Else</a></li>
+            <li><a href="#While Loops">While Loops</a></li>
+            <li><a href="#For Loops">For Loops</a></li>
 
         </ul>
     </nav>
@@ -135,6 +139,81 @@
                 <p>x = 5 <br>
                     print(type(x))</p>
             </div>
+        </section>
+
+        <section id="Operators" class="main-section">
+            <header>Python Operators</header>
+            <p>Operators are used to perform operations on variables and values.</p>
+            <p>In the example below, we use the +  operator to add together two values:</p>
+            <h2>Example</h2>
+            <div class="codes">
+                <p>print(10 + 5)</p>
+            </div>
+            <p>Python divides the operators in the following groups:</p>
+            <li>Arithmetic operators</li>
+            <li>Assignment operators</li>
+            <li>Comparison operators</li>
+            <li>Logical operators</li>
+            <li>Identity operators</li>
+            <li>Membership operators</li>
+            <li>Bitwise operators</li>
+            
+        </section>
+
+
+        <section id="If ... Else" class="main-section">
+            <header>Python If ... Else</header>
+            <p>Python Conditions and If statements</p>
+            <p>Python supports the usual logical conditions from mathematics:</p>
+            <li>Equals:  <span class="type">a == b</span></li>
+            <li>Not Equals:  <span class="type">a != b</span></li>
+            <li>Less than:  <span class="type">a < b</span></li>
+            <li>Less than or equal to:  <span class="type">a <= b</span></li>
+            <li>Greater than:  <span class="type">a > b</span></li> 
+            <li>Greater than or equal to:   <span class="type">a >= b</span></li>
+
+            <p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+            <p>An "if statement" is written by using the if keyword.</p>
+            <h2>Example</h2>
+            <p>If statement:</p>
+            <div class="codes">
+                <p>a = 33 <br>
+                    b = 200 <br>
+                    if b > a: <br>
+                     <span class="move"> print("b is greater than a")</p></span>
+                    </div>
+                     <p>In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".</p>
+            
+        </section>
+
+
+        <section id="While Loops" class="main-section">
+            <header>Python While Loops</header>
+            <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+            <h2>Example</h2>
+            <p>Print i as long as i is less than 6:</p>
+            <div class="codes">
+                <p>i = 1 <br>
+                    while i < 6: <br>
+                      <span class="move">print(i)</span> <br>
+                      i += 1</p>
+            </div>
+            <p class="yellow"> <strong >Note:</strong> remember to increment i, or else the loop will continue forever.</p>
+        </section>
+
+        <section id="For Loops" class="main-section">
+
+            <header>Python For Loops</header>
+            <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+            <p>This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages. <br>This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages. <br>With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+            <h2>Example</h2>
+            <p>Print each fruit in a fruit list:</p>
+            <div class="codes">
+                <p>fruits = ["apple", "banana", "cherry"] <br>
+                    for x in fruits: <br>
+                     <span class="move">print(x)</p></span> 
+            </div>
+            <p>The for loop does not require an indexing variable to set beforehand.</p>
         </section>
     </main>
 

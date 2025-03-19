@@ -65,8 +65,13 @@ p{
 .move{
     margin-left: 25px;
 }
+
 .type{
     color: red;
+}
+
+.yellow{
+    background-color: lightyellow;
 }
 
 header{
